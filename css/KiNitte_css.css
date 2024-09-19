@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+html{
+    font-size: 100%;
+}
+
+.wrapper{
+    max-width: 1200px; /*適当　あとであわせる*/
+    margin: 0 auto;
+    padding: 0 3%;
+}
+
+
+/*ヘッダーを固定しとくやつ*/
+.page-header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e7d9c78b;
+    z-index: 1000;
+    transition:  0.3s; /* アニメーションのスムーズな変化を設定 */
+    height: 100px; /* 通常時の高さ */
+    padding-top: 11px;
+    padding-bottom: 12px;
+}
+.page-header.shrink {
+    height: 90px; /* スクロール後の縮小時の高さ */
+    padding-top: 6px;
+    padding-bottom: 7px
+}
+/*.header-inner{
+    display: flex;
+    justify-content: space-between;
+}*/
+body {
+    margin: 0;
+    padding-top: 150px;  /*ヘッダーの高さ分の余白を設定*/
+}
+#news, #shop, #translate, #person{
+    padding-top: 150px;
+    margin-top: -150px;
+}
+  /*ここまで*/
+
+  /*header のメニュー*/
+.page-header h1{
+    margin: 0;
+}
+.logo{
+    width: 300px;
+}
+.main-nav{
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+.main-nav li{
+    margin-left: 36px;
+}
+.main-nav a{
+    color: #4d3921;
+    text-decoration: none;
+}
+.main-nav a:hover{
+    color: #5a5a5acb;
+    text-decoration: none;
+}
+
+
+/*トップページ　about*/
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.toplogo{
+    width: 60%;
+}
