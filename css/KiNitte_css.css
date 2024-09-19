@@ -76,9 +76,12 @@ body {
 .top{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 20px;
-    border-bottom: 3px solid thin #5a5a5a;
 }
 .toplogo{
     width: 60%;
+}
+.bottom_line{
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	border-color: #5a5a5acb;
 }
