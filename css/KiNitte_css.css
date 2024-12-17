@@ -78,7 +78,6 @@ body {
 .top{
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #5a5a5acb;
     margin-bottom: 20px;
 }
 .toplogo{
